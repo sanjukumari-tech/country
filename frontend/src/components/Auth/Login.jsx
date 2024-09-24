@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { Box, Button, Input, VStack, useToast } from '@chakra-ui/react';
@@ -14,7 +14,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post('https://countrybasedcurrency.onrender.com/api/auth/login', {
+      const { data } = await axios.post('https://country-y0tn.onrender.com//api/auth/login', {
         email,
         password,
       });

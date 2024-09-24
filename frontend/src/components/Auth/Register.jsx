@@ -13,7 +13,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://countrybasedcurrency.onrender.com/api/auth/register', {
+      await axios.post('https://country-y0tn.onrender.com/api/auth/register', {
         name,
         email,
         password,

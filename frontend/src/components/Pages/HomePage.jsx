@@ -12,7 +12,7 @@ const HomePage = () => {
 
   const fetchAllCountries = async () => {
     try {
-      const { data } = await axios.get('https://countrybasedcurrency.onrender.com/api/countries');
+      const { data } = await axios.get('https://country-y0tn.onrender.com/api/countries');
       setCountries(data);
     } catch (error) {
       console.error('Error fetching countries', error);
@@ -28,7 +28,7 @@ const HomePage = () => {
 
   const handleSearch = async () => {
     try {
-      const { data } = await axios.get(`https://countrybasedcurrency.onrender.com/api/countries/${currency}`);
+      const { data } = await axios.get(`https://country-y0tn.onrender.com/api/countries/${currency}`);
       setCountries(data);
       toast({
         title: 'Search completed.',
